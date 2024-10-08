@@ -1,0 +1,80 @@
+# Requirements for running the SauceDemo tests
+
+# Required packages
+#behave
+#selenium
+
+# Instructions to run the tests after cloning the repository:
+
+# 1. Clone the repository:
+#    git clone <your-repo-url>
+
+# 2. Change into the project directory:
+#    cd <your-project-directory>
+
+# 3. Install the required packages:
+#    pip install -r requirements.txt
+
+# 4. Set up environment variables (Linux/macOS):
+#    export CHROMEDRIVER_PATH='/path/to/chromedriver'
+#    export SAUCEDEMO_URL='https://www.saucedemo.com/'
+
+#    OR for Windows:
+#    set CHROMEDRIVER_PATH='C:\path\to\chromedriver.exe'
+#    set SAUCEDEMO_URL='https://www.saucedemo.com/'
+
+# 5. Run the tests:
+#    behave
+
+
+
+
+
+
+# Manual Test Cases Solution
+
+# Test Case 1: Login Functionality
+# Objective: Ensure that users can successfully log in with valid credentials and are blocked from logging in with invalid credentials.
+# Steps:
+# 1. Navigate to the Sauce Demo website: https://www.saucedemo.com/
+# 2. Enter a valid username (e.g., standard_user).
+# 3. Enter the correct password (e.g., secret_sauce).
+# 4. Click the Login button.
+# 5. Verify that the user is redirected to the Inventory Page.
+# 6. Attempt to log in with invalid credentials (e.g., incorrect username or password).
+# 7. Verify that the system displays an error message and prevents the login attempt.
+# Expected Results:
+# - With valid credentials, the user is successfully logged in and directed to the inventory page.
+# - With invalid credentials, the user receives an error message and cannot log in.
+# Reasoning: Login functionality is critical for ensuring that only authorized users can access the application.
+
+# Test Case 2: Adding Items to the Cart and Verifying Total
+# Objective: Ensure that users can add items to the cart and that the cart updates with the correct total price.
+# Steps:
+# 1. Log in with valid credentials.
+# 2. Add the first item (e.g., Sauce Labs Backpack) to the cart.
+# 3. Add a second item (e.g., Sauce Labs Bike Light).
+# 4. Click the Cart icon to view the cart.
+# 5. Verify that both items are listed in the cart.
+# 6. Confirm that the total price matches the sum of the individual items.
+# 7. Remove one item and verify that the total updates correctly.
+# Expected Results:
+# - Items should be added to the cart successfully and displayed correctly.
+# - The total price should reflect the correct sum of the selected items.
+# - Removing an item should result in the total being recalculated accordingly.
+# Reasoning: Adding items to the cart is a core function of any eCommerce website.
+
+# Test Case 3: Checkout Process and Order Confirmation
+# Objective: Verify that users can complete the checkout process and receive an order confirmation upon successful submission.
+# Steps:
+# 1. Log in with valid credentials.
+# 2. Add an item to the cart and proceed to the cart page.
+# 3. Click the Checkout button.
+# 4. Fill out the necessary fields (e.g., first name, last name, postal code) on the checkout form.
+# 5. Click Continue, then click Finish to complete the order.
+# 6. Verify that the user is redirected to an order confirmation page.
+# 7. Confirm that the message "Thank you for your order!" is displayed.
+# Expected Results:
+# - The user should be able to fill out the checkout form and complete the purchase without issues.
+# - A confirmation page should display the message "Thank you for your order!" after successful checkout.
+# Reasoning: The checkout process is the most critical step in an eCommerce transaction.
