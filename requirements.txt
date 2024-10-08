@@ -7,15 +7,12 @@
 # Instructions to run the tests after cloning the repository:
 
 # 1. Clone the repository:
-#    git clone <your-repo-url>
+#    git clone https://github.com/InfinityBooks/saucedemo-test.git
 
-# 2. Change into the project directory:
-#    cd <your-project-directory>
-
-# 3. Install the required packages:
+# 2. Install the required packages:
 #    pip install -r requirements.txt
 
-# 4. Set up environment variables (Linux/macOS):
+# 3. Set up environment variables (Linux/macOS):
 #    export CHROMEDRIVER_PATH='/path/to/chromedriver'
 #    export SAUCEDEMO_URL='https://www.saucedemo.com/'
 
@@ -23,7 +20,7 @@
 #    set CHROMEDRIVER_PATH='C:\path\to\chromedriver.exe'
 #    set SAUCEDEMO_URL='https://www.saucedemo.com/'
 
-# 5. Run the tests:
+# 5. Run the tests in the terminal using :
 #    behave
 
 
